@@ -3,9 +3,10 @@ const express = require('express');
 const app =express();
 
 app.get('/',(req,res) => {
+    console.log('x-ringba-wl-account-id:', req.headers['x-ringba-wl-account-id']);
     res.send(`Welcome ${req.hostname}`);
 })
 
-app.listen(3000,() => {
-    console.log(`server is running on port 3000`);
+app.listen(4444,() => {
+    console.log(`server is running on port 4444`);
 })
