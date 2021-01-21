@@ -7,6 +7,6 @@ app.get('/',(req,res) => {
     res.send(`Welcome ${req.hostname}`);
 })
 
-app.listen(4444,() => {
+app.listen(80,() => {
     console.log(`server is running on port 4444`);
 })
