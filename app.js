@@ -7,6 +7,6 @@ app.get('/',(req,res) => {
     res.send(`Welcome ${req.hostname}`);
 })
 
-app.listen(8080,() => {
-    console.log(`server is running on port 8080`);
+app.listen(80,() => {
+    console.log(`server is running on port 80`);
 })
